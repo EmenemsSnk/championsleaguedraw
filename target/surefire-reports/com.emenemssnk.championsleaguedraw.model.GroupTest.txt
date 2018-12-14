@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.emenemssnk.championsleaguedraw.model.GroupTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in com.emenemssnk.championsleaguedraw.model.GroupTest
+groupShouldContainsOnlyEnglandTeam  Time elapsed: 0.003 sec  <<< ERROR!
+org.junit.AssumptionViolatedException: got: <false>, expected: is <true>
+	at com.emenemssnk.championsleaguedraw.model.GroupTest.groupShouldContainsOnlyEnglandTeam(GroupTest.java:25)
+
