@@ -3,7 +3,7 @@ package com.emenemssnk.championsleaguedraw.team;
 import com.emenemssnk.championsleaguedraw.draw.DrawPossibilities;
 import com.emenemssnk.championsleaguedraw.group.Group;
 import com.emenemssnk.championsleaguedraw.pot.Pot;
-import com.emenemssnk.championsleaguedraw.draw.DrawResult;
+import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;

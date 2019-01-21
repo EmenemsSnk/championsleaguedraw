@@ -1,7 +1,6 @@
 package com.emenemssnk.championsleaguedraw;
 
 import com.emenemssnk.championsleaguedraw.draw.mechanism.GroupStageDraw;
-import com.emenemssnk.championsleaguedraw.pot.PotLoader;
 import com.emenemssnk.championsleaguedraw.pot.Pot;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
@@ -18,8 +17,6 @@ public class Main {
             PotLoader pot = new Gson().fromJson(reader, PotLoader.class);
             GroupStageDraw groupStageDraw = new GroupStageDraw();
             List<Pot> pots = pot.getPots();
-            /*pots.forEach(groupStageDraw::draw);
-            groupStageDraw.getDrawResult().print();*/
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
-import com.emenemssnk.championsleaguedraw.draw.DrawResult;
+import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
 import com.emenemssnk.championsleaguedraw.group.Group;
 import com.emenemssnk.championsleaguedraw.team.Team;
 import com.emenemssnk.championsleaguedraw.team.Team.Nation;

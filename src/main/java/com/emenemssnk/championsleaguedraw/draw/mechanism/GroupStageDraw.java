@@ -1,7 +1,7 @@
 package com.emenemssnk.championsleaguedraw.draw.mechanism;
 
 import com.emenemssnk.championsleaguedraw.draw.DrawPossibilities;
-import com.emenemssnk.championsleaguedraw.draw.DrawResult;
+import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
 import com.emenemssnk.championsleaguedraw.group.Group;
 import com.emenemssnk.championsleaguedraw.team.Team;
 import java.util.List;
