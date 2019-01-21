@@ -8,11 +8,11 @@ import com.emenemssnk.championsleaguedraw.model.Team;
 import java.util.List;
 
 public class DrawMechanism {
-    private final DrawResult drawResult = new DrawResult();
+    private final DrawResult drawResult;
     private DrawPossibilities drawPossibilities;
 
     public DrawMechanism(DrawResult drawResult) {
-//        this.drawResult = drawResult;
+        this.drawResult = drawResult;
     }
 
     public void draw(Pot pot) {
@@ -48,8 +48,4 @@ public class DrawMechanism {
     private int getRandomIndex(int range) {
         return (int) (Math.random() * range);
     }
-
-/*    public DrawResult getDrawResult() {
-        return drawResult;
-    }*/
 }

@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc2979f-cd1f-455e-b162-ec3cec7425a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/common/rules/GroupStageRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/common/rules/RussiaUkraineRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/common/rules/SameCountryRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/controller/DrawMechanism.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/DrawPossibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/utils/DrawResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/controller/DrawMechanismTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/model/DrawPossibilitiesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/model/GroupTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/model/PotTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/utils/DrawResultTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63c96d6371f0e9a9cfab0eec5ee396a012e8f3f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c60e9fe3104314f108f59ce5ced9d1a217b7ff62" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c60e9fe3104314f108f59ce5ced9d1a217b7ff62" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Draw.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/PotLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/controller/PotLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/DrawResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Pot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Pot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Rule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/Draw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/PotLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/DrawResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Pot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Pot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Rule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Team$Nation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Team$Nation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emenemssnk/championsleaguedraw/model/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/controller/DrawMechanism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/controller/DrawMechanism.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +29,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="141" />
+          <entry key="java" value="143" />
           <entry key="json" value="1" />
           <entry key="xml" value="7" />
         </counts>
@@ -68,7 +37,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="141" />
+          <entry key="JAVA" value="143" />
           <entry key="JSON" value="1" />
           <entry key="XML" value="7" />
         </counts>
@@ -76,14 +45,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="java" value="4051" />
+          <entry key="java" value="4071" />
           <entry key="json" value="3" />
           <entry key="xml" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4051" />
+          <entry key="JAVA" value="4071" />
           <entry key="JSON" value="3" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="91" />
@@ -110,34 +79,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/model/DrawPossibilitiesTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="300">
+              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/emenemssnk/championsleaguedraw/utils/DrawResultTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -145,44 +93,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/controller/DrawMechanism.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/utils/DrawResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="574">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/model/DrawPossibilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -280,6 +195,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,15 +236,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="rules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,70 +251,18 @@
               <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
               <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="championsleaguedraw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="championsleaguedraw" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547474575401" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548068041039" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
   </component>
@@ -437,7 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DrawResultTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.emenemssnk.championsleaguedraw.Main" />
       <module name="championsleaguedraw" />
@@ -518,11 +373,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DrawResultTest" />
         <item itemvalue="JUnit.GroupTest" />
         <item itemvalue="JUnit.GroupTest.groupShouldContainsOnlyEnglandTeam" />
         <item itemvalue="JUnit.PotTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -593,12 +448,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64116000" />
+    <option name="totallyTimeSpent" value="64170000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="-2" width="1847" height="1082" extended-state="7" />
+    <frame x="1993" y="-2" width="1847" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19433647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20322043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -607,7 +463,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.29306722" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32878152" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32878152" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38550422" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -619,7 +475,7 @@
       <window_info anchor="bottom" id="Gerrit" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32983193" />
+      <window_info anchor="bottom" id="Messages" order="14" visible="true" weight="0.32983193" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -649,7 +505,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Main.java</url>
-          <line>23</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -796,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -842,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="300">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -852,8 +705,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/emenemssnk/championsleaguedraw/controller/DrawMechanism.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="574">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
