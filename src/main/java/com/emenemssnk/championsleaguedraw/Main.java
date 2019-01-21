@@ -1,8 +1,8 @@
 package com.emenemssnk.championsleaguedraw;
 
-import com.emenemssnk.championsleaguedraw.controller.DrawMechanism;
-import com.emenemssnk.championsleaguedraw.controller.PotLoader;
-import com.emenemssnk.championsleaguedraw.model.Pot;
+import com.emenemssnk.championsleaguedraw.draw.mechanism.GroupStageDraw;
+import com.emenemssnk.championsleaguedraw.pot.PotLoader;
+import com.emenemssnk.championsleaguedraw.pot.Pot;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import java.io.FileNotFoundException;
@@ -16,10 +16,10 @@ public class Main {
         try {
             JsonReader reader = new JsonReader(new FileReader(JSON_PATH));
             PotLoader pot = new Gson().fromJson(reader, PotLoader.class);
-            DrawMechanism drawMechanism = new DrawMechanism();
+            GroupStageDraw groupStageDraw = new GroupStageDraw();
             List<Pot> pots = pot.getPots();
-            pots.forEach(drawMechanism::draw);
-            drawMechanism.getDrawResult().print();
+            /*pots.forEach(groupStageDraw::draw);
+            groupStageDraw.getDrawResult().print();*/
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

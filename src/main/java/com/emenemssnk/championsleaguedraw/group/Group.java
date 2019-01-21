@@ -1,6 +1,7 @@
-package com.emenemssnk.championsleaguedraw.model;
+package com.emenemssnk.championsleaguedraw.group;
 
-import com.emenemssnk.championsleaguedraw.model.Team.Nation;
+import com.emenemssnk.championsleaguedraw.team.Team;
+import com.emenemssnk.championsleaguedraw.team.Team.Nation;
 import java.util.ArrayList;
 import java.util.List;
 

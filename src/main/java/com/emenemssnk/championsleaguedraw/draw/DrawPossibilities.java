@@ -1,9 +1,11 @@
-package com.emenemssnk.championsleaguedraw.model;
+package com.emenemssnk.championsleaguedraw.draw;
 
 import com.emenemssnk.championsleaguedraw.common.rules.RussiaUkraineRule;
 import com.emenemssnk.championsleaguedraw.common.rules.SameCountryRule;
-import com.emenemssnk.championsleaguedraw.model.Team.Nation;
-import com.emenemssnk.championsleaguedraw.utils.DrawResult;
+import com.emenemssnk.championsleaguedraw.group.Group;
+import com.emenemssnk.championsleaguedraw.team.Team;
+import com.emenemssnk.championsleaguedraw.team.Team.Nation;
+import com.emenemssnk.championsleaguedraw.pot.Pot;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

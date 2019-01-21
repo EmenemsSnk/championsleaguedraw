@@ -1,6 +1,6 @@
-package com.emenemssnk.championsleaguedraw.controller;
+package com.emenemssnk.championsleaguedraw.pot;
 
-import com.emenemssnk.championsleaguedraw.model.Pot;
+import com.emenemssnk.championsleaguedraw.pot.Pot;
 import java.util.ArrayList;
 import java.util.List;
 

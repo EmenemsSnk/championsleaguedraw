@@ -1,6 +1,6 @@
 package com.emenemssnk.championsleaguedraw.common.rules;
 
-import com.emenemssnk.championsleaguedraw.model.Team;
+import com.emenemssnk.championsleaguedraw.team.Team;
 
 public class GroupStageRule {
 

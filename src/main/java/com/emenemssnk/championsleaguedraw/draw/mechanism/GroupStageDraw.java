@@ -1,21 +1,21 @@
-package com.emenemssnk.championsleaguedraw.controller;
+package com.emenemssnk.championsleaguedraw.draw.mechanism;
 
-import com.emenemssnk.championsleaguedraw.model.DrawPossibilities;
-import com.emenemssnk.championsleaguedraw.utils.DrawResult;
-import com.emenemssnk.championsleaguedraw.model.Group;
-import com.emenemssnk.championsleaguedraw.model.Pot;
-import com.emenemssnk.championsleaguedraw.model.Team;
+import com.emenemssnk.championsleaguedraw.draw.DrawPossibilities;
+import com.emenemssnk.championsleaguedraw.draw.DrawResult;
+import com.emenemssnk.championsleaguedraw.group.Group;
+import com.emenemssnk.championsleaguedraw.team.Team;
 import java.util.List;
 
-public class DrawMechanism {
+public class GroupStageDraw implements DrawMechanism{
     private final DrawResult drawResult = new DrawResult();
     private DrawPossibilities drawPossibilities;
 
-    public DrawMechanism(DrawResult drawResult) {
+    public GroupStageDraw(DrawResult drawResult) {
 //        this.drawResult = drawResult;
     }
 
-    public void draw(Pot pot) {
+    public void draw() {
+        /*Pot pot;
         drawPossibilities = new DrawPossibilities(pot, drawResult);
         drawPossibilities.calculateAllPossibilities();
         List<Team> teams2Draw = pot.getTeams();
@@ -26,7 +26,7 @@ public class DrawMechanism {
             List<Group> possibleGroups = drawPossibilities.getPossibleCombinations(chosenTeam);
             Group chosenGroup = drawGroup(possibleGroups);
             drawResult.addTeam2Group(chosenTeam, chosenGroup.getNumber()-1);
-        }
+        }*/
     }
 
     private Team drawTeam(List<Team> teams2Draw) {
