@@ -1,4 +1,4 @@
-package com.emenemssnk.championsleaguedraw.model;
+package com.emenemssnk.championsleaguedraw.team;
 
 public final class Team {
     private final String name;

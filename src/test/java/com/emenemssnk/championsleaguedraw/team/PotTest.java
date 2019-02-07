@@ -1,7 +1,8 @@
-package com.emenemssnk.championsleaguedraw.model;
+package com.emenemssnk.championsleaguedraw.team;
 
 import static org.junit.jupiter.api.Assertions.*;
-import com.emenemssnk.championsleaguedraw.model.Team.Nation;
+import com.emenemssnk.championsleaguedraw.team.Team.Nation;
+import com.emenemssnk.championsleaguedraw.pot.Pot;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;

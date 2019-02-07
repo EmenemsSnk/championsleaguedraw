@@ -1,7 +1,7 @@
 package com.emenemssnk.championsleaguedraw.common.rules;
 
-import com.emenemssnk.championsleaguedraw.model.Group;
-import com.emenemssnk.championsleaguedraw.model.Team.Nation;
+import com.emenemssnk.championsleaguedraw.group.Group;
+import com.emenemssnk.championsleaguedraw.team.Team.Nation;
 
 public class RussiaUkraineRule {
 

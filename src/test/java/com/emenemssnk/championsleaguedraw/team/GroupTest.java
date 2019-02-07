@@ -1,11 +1,13 @@
-package com.emenemssnk.championsleaguedraw.model;
+/*
+package com.emenemssnk.championsleaguedraw.team;
 
 import static org.junit.Assume.assumeTrue;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.emenemssnk.championsleaguedraw.model.Team.Nation;
+import com.emenemssnk.championsleaguedraw.group.Group;
+import com.emenemssnk.championsleaguedraw.team.Team.Nation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -29,3 +31,4 @@ class GroupTest {
         });
     }
 }
+*/
