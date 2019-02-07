@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Group   {
+    public static final int KNOCKOUT_SIZE = 2;
+    public static final int GROUP_STAGE_SIZE = 2;
     private static int index = 1;
-    private final List<Team> teams = new ArrayList<>(4);
+    private final List<Team> teams;
     private final int number;
 
-    public Group() {
+    public Group(int size) {
         this.number = index++;
+        teams = new ArrayList<>(size);
     }
 
     public void addTeam(Team team) {

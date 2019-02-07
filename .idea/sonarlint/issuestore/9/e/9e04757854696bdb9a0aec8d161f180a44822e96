@@ -1,0 +1,4 @@
+
+Zsquid:S1854)">Remove this useless assignment to local variable "groupIndex".(ï¾Ö¬üÿÿÿÿ
+Ksquid:S1481)"/Remove this unused "groupIndex" local variable.(ï¾Ö¬üÿÿÿÿ
+@squid:S21401")Use "java.util.Random.nextInt()" instead.(îÎˆÒ

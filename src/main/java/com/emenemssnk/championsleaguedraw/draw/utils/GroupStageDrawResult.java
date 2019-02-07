@@ -6,23 +6,20 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class KnockoutDrawResult implements DrawResult{
-    private final List<Group> groups;
+public class GroupStageDrawResult implements DrawResult {
 
-    public KnockoutDrawResult(int knockoutStage) {
-        groups = Stream.generate(() -> new Group(Group.GROUP_STAGE_SIZE))
-            .limit(knockoutStage)
-            .collect(Collectors.toList());
-    }
+    private final List<Group> groups = Stream.generate(() -> new Group(Group.KNOCKOUT_SIZE))
+        .limit(DrawResult.GROUP_STAGE)
+        .collect(Collectors.toList());
 
     public void addTeam2Group(Team team, int idGroup) {
         groups.get(idGroup).addTeam(team);
     }
 
     public void print() {
-        System.out.println("KNOCKOUT STAGE DRAW RESULT:");
+        System.out.println("GROUP STAGE DRAW RESULT:");
         groups.stream().forEach(group -> {
-            System.out.println("Pair: " + group.getNumber());
+            System.out.println("Group: " + group.getNumber());
             group.getTeams().stream().forEach(System.out::println);
             System.out.println();
         });
