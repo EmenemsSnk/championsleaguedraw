@@ -1,13 +1,11 @@
 package com.emenemssnk.championsleaguedraw;
 
 import com.emenemssnk.championsleaguedraw.draw.mechanism.GroupStageDraw;
-import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
 import com.emenemssnk.championsleaguedraw.draw.utils.GroupStageDrawResult;
 import com.emenemssnk.championsleaguedraw.pot.Pot;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
