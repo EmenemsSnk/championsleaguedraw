@@ -3,14 +3,36 @@ package com.emenemssnk.championsleaguedraw.draw.utils;
 import com.emenemssnk.championsleaguedraw.group.Group;
 import com.emenemssnk.championsleaguedraw.team.Team;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public interface DrawResult {
-    int GROUP_STAGE = 8;
-    int ONE_OF_EIGHT = 8;
-    int QUATER_FINAL = 4;
-    int SEMI_FINAL = 2;
+public final class DrawResult {
+    public static final int GROUP_STAGE = 8;
+    public static final int ONE_OF_EIGHT = 8;
+    public static final int QUATER_FINAL = 4;
+    public static final int SEMI_FINAL = 2;
 
-    void addTeam2Group(Team team, int idGroup);
-    void print();
-    List<Group> getGroups();
+    private final List<Group> groups;
+
+    public DrawResult(int groupSize, int stage) {
+        groups = Stream.generate(() -> new Group(groupSize))
+        .limit(stage)
+        .collect(Collectors.toList());
+    }
+
+    public void addTeam2Group(Team team, int idGroup) {
+        groups.get(idGroup).addTeam(team);
+    }
+
+    public void print() {
+        groups.stream().forEach(group -> {
+            //System.out.println("Group: " + group.getNumber());
+            group.getTeams().stream().forEach(System.out::println);
+            System.out.println();
+        });
+    }
+
+    public List<Group> getGroups() {
+        return groups;
+    }
 }

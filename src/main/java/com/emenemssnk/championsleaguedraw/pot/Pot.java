@@ -21,6 +21,17 @@ public class Pot {
         return teams.isEmpty();
     }
 
+    public Team pullTeam(int index){
+        Team team = teams.get(index);
+        teams.remove(index);
+
+        return team;
+    }
+
+    public int getCurrentSize(){
+        return teams.size();
+    }
+
     public List<Team> getTeams() {
         return teams;
     }

@@ -17,15 +17,17 @@ import java.util.Set;
 public class DrawPossibilities {
     private Map<Team, List<Group>> combinations = new HashMap<>();
     private Pot pot;
-    DrawResult drawResult;
+    private DrawResult drawResult;
+    private List<Team> teams2Draw;
 
     public DrawPossibilities(Pot pot, DrawResult drawResult){
         this.pot = pot;
         this.drawResult = drawResult;
-        pot.getTeams().forEach(team -> combinations.put(team, new ArrayList<>()));
+        teams2Draw = pot.getTeams();
+        teams2Draw.forEach(team -> combinations.put(team, new ArrayList<>()));
     }
 
-    public void calculateAllPossibilities() {
+    void calculateAllPossibilities() {
         List<Team> teams = pot.getTeams();
         for (Team team: teams) {
             List<Group> possibleCombinations = getPossibleCombinations(team);
@@ -38,26 +40,24 @@ public class DrawPossibilities {
         }
     }
 
-    public void validatePossibilities4Team(Team team){
+    int getNumberOfPossibleCombinations4Team(Team team){
+        return combinations.get(team).size();
+    }
+
+    void validatePossibilities4Team(Team team){
         Set groups2Extract = getGroups2Extract();
         List<Group> possibleGroups = getPossibleCombinations(team);
 
         possibleGroups.removeAll(groups2Extract);
     }
 
-    public void removeAssignedGroup(Group group){
-        combinations.entrySet().stream()
-            .filter(t -> t.getValue().contains(group))
-            .forEach(t -> t.getValue().remove(group));
-    }
-
-    public List<Group> getPossibleCombinations(Team team) {
+    List<Group> getPossibleCombinations(Team team) {
         return combinations.get(team);
     }
 
     private Set<Group> getGroups2Extract() {
         Set<Group> groups2Extract = new HashSet<>();
-        List<Team> teams2Draw = pot.getTeams();
+
         teams2Draw.stream()
             .filter(team -> hasLimitedPossibilities(team) || isSingleCombination(team))
             .map(this::getPossibleCombinations)
@@ -69,16 +69,30 @@ public class DrawPossibilities {
     private boolean hasLimitedPossibilities(Team team) {
         Nation nation = team.getNation();
 
-        return getCountPossibleCombinations(team) == pot.getCountTeamsOfSameNation(nation);
+        return getCountOfPossibleCombinations(team) == pot.getCountTeamsOfSameNation(nation);
     }
 
-    private int getCountPossibleCombinations(Team team) {
+    private int getCountOfPossibleCombinations(Team team) {
         return getPossibleCombinations(team).size();
     }
 
     private boolean isSingleCombination(Team team) {
-        List<Group> groups = combinations.get(team);
-        return groups.size() == 1;
+        List<Group> possibleGroups = combinations.get(team);
+        return possibleGroups.size() == 1;
+    }
+
+    Group pullGroup4Team(int groupIndex, Team team) {
+        List<Group> possibleGroups = combinations.get(team);
+        Group group = possibleGroups.get(groupIndex);
+        removeAssignedGroup(group);
+
+        return group;
+    }
+
+    private void removeAssignedGroup(Group group){
+        combinations.entrySet().stream()
+            .filter(t -> t.getValue().contains(group))
+            .forEach(t -> t.getValue().remove(group));
     }
 
 }

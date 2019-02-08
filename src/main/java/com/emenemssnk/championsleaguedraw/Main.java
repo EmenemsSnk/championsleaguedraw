@@ -1,7 +1,8 @@
 package com.emenemssnk.championsleaguedraw;
 
-import com.emenemssnk.championsleaguedraw.draw.mechanism.GroupStageDraw;
-import com.emenemssnk.championsleaguedraw.draw.utils.GroupStageDrawResult;
+import com.emenemssnk.championsleaguedraw.draw.DrawMechanism;
+import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
+import com.emenemssnk.championsleaguedraw.group.Group;
 import com.emenemssnk.championsleaguedraw.pot.Pot;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -19,10 +20,10 @@ public class Main {
         try (JsonReader reader = new JsonReader(new FileReader(JSON_PATH))){
             Type listType = new TypeToken<ArrayList<Pot>>(){}.getType();
             List<Pot> pots = new Gson().fromJson(reader, listType);
-            GroupStageDrawResult groupStageDrawResult = new GroupStageDrawResult();
-            GroupStageDraw groupStageDraw = new GroupStageDraw(pots, groupStageDrawResult);
+            DrawResult drawResult = new DrawResult(Group.GROUP_STAGE_SIZE, DrawResult.GROUP_STAGE);
+            DrawMechanism groupStageDraw = new DrawMechanism(pots, drawResult);
             groupStageDraw.draw();
-            groupStageDrawResult.print();
+            drawResult.print();
         } catch (IOException e) {
             e.printStackTrace();
         }

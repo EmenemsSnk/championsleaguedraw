@@ -10,12 +10,12 @@ public class RussiaUkraineRule {
      */
     public static boolean isPreserved(Nation nation, Group group) {
         switch(nation){
-        case UKRAINE:
-            return !group.containsTeamOfNation(Nation.RUSSIA);
-        case RUSSIA:
-            return !group.containsTeamOfNation(Nation.UKRAINE);
-        default:
-            return true;
+            case UKRAINE:
+                return !group.containsTeamOfNation(Nation.RUSSIA);
+            case RUSSIA:
+                return !group.containsTeamOfNation(Nation.UKRAINE);
+            default:
+                return true;
         }
     }
 
