@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Group   {
     public static final int KNOCKOUT_SIZE = 2;
-    public static final int GROUP_STAGE_SIZE = 4;
+    public static final int GROUP_STAGE_SIZE = 2;
     private static int index = 1;
     private final List<Team> teams;
     private final int number;
@@ -25,8 +25,8 @@ public class Group   {
         return teams.stream().anyMatch(team -> team.getNation().equals(nation));
     }
 
-    public boolean containsTeam(Team team){
-        return teams.stream().anyMatch(t -> t.equals(team));
+    public boolean contains(Team team){
+        return teams.contains(team);
     }
 
     public int getNumber() {

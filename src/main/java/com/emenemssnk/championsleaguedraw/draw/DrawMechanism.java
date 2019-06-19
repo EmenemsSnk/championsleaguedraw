@@ -1,5 +1,7 @@
 package com.emenemssnk.championsleaguedraw.draw;
 
+import com.emenemssnk.championsleaguedraw.draw.possibilities.DrawPossibilities;
+import com.emenemssnk.championsleaguedraw.draw.possibilities.GroupDrawPossibilities;
 import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
 import com.emenemssnk.championsleaguedraw.group.Group;
 import com.emenemssnk.championsleaguedraw.pot.Pot;
@@ -18,7 +20,7 @@ public class DrawMechanism {
 
     public void draw() {
         pots.forEach(pot -> {
-            drawPossibilities = new DrawPossibilities(pot, drawResult);
+            drawPossibilities = new GroupDrawPossibilities(pot, drawResult);
             drawPossibilities.calculateAllPossibilities();
 
             while (!pot.isEmpty()) {

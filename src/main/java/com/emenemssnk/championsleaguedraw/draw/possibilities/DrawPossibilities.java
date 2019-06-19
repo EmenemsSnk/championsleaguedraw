@@ -1,12 +1,10 @@
-package com.emenemssnk.championsleaguedraw.draw;
+package com.emenemssnk.championsleaguedraw.draw.possibilities;
 
-import com.emenemssnk.championsleaguedraw.common.rules.RussiaUkraineRule;
-import com.emenemssnk.championsleaguedraw.common.rules.SameCountryRule;
 import com.emenemssnk.championsleaguedraw.draw.utils.DrawResult;
 import com.emenemssnk.championsleaguedraw.group.Group;
+import com.emenemssnk.championsleaguedraw.pot.Pot;
 import com.emenemssnk.championsleaguedraw.team.Team;
 import com.emenemssnk.championsleaguedraw.team.Team.Nation;
-import com.emenemssnk.championsleaguedraw.pot.Pot;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,10 +13,10 @@ import java.util.Map;
 import java.util.Set;
 
 public class DrawPossibilities {
-    private Map<Team, List<Group>> combinations = new HashMap<>();
-    private Pot pot;
-    private DrawResult drawResult;
-    private List<Team> teams2Draw;
+     Map<Team, List<Group>> combinations = new HashMap<>();
+     Pot pot;
+     DrawResult drawResult;
+     List<Team> teams2Draw;
 
     public DrawPossibilities(Pot pot, DrawResult drawResult){
         this.pot = pot;
@@ -27,24 +25,21 @@ public class DrawPossibilities {
         teams2Draw.forEach(team -> combinations.put(team, new ArrayList<>()));
     }
 
-    void calculateAllPossibilities() {
+    public void calculateAllPossibilities() {
         List<Team> teams = pot.getTeams();
         for (Team team: teams) {
             List<Group> possibleCombinations = getPossibleCombinations(team);
             List<Group> groups = drawResult.getGroups();
 
-            groups.stream()
-                .filter(group -> SameCountryRule.isPreserved(team.getNation(), group))
-                .filter(group -> RussiaUkraineRule.isPreserved(team.getNation(), group))
-                .forEach(possibleCombinations::add);
+            possibleCombinations.addAll(groups);
         }
     }
 
-    int getNumberOfPossibleCombinations4Team(Team team){
+    public int getNumberOfPossibleCombinations4Team(Team team){
         return combinations.get(team).size();
     }
 
-    void validatePossibilities4Team(Team team){
+    public void validatePossibilities4Team(Team team){
         Set groups2Extract = getGroups2Extract();
         List<Group> possibleGroups = getPossibleCombinations(team);
 
@@ -81,7 +76,7 @@ public class DrawPossibilities {
         return possibleGroups.size() == 1;
     }
 
-    Group pullGroup4Team(int groupIndex, Team team) {
+    public Group pullGroup4Team(int groupIndex, Team team) {
         List<Group> possibleGroups = combinations.get(team);
         Group group = possibleGroups.get(groupIndex);
         removeAssignedGroup(group);
