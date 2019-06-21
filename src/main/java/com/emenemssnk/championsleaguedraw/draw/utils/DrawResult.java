@@ -20,14 +20,13 @@ public final class DrawResult {
         .collect(Collectors.toList());
     }
 
-    public void addTeam2Group(Team team, int idGroup) {
-        groups.get(idGroup).addTeam(team);
+    public void addTeam2Group(Team team, Group chosenGroup) {
+        chosenGroup.addTeam(team);
     }
 
     public void print() {
-        groups.stream().forEach(group -> {
-            //System.out.println("Group: " + group.getNumber());
-            group.getTeams().stream().forEach(System.out::println);
+        groups.forEach(group -> {
+            group.getTeams().forEach(System.out::println);
             System.out.println();
         });
     }

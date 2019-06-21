@@ -16,6 +16,7 @@ public class OneEightDrawPossibilities extends DrawPossibilities {
         this.groupStageResult = groupStageResult;
     }
 
+    @Override
     public void calculateAllPossibilities() {
         List<Team> teams = pot.getTeams();
         for (Team team: teams) {

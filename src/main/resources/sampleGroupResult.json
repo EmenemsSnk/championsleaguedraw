@@ -57,7 +57,7 @@
     "teams": [
       {"name": "Napoli", "nation": "ITALY", "possibleCombinations":[]},
       {"name": "Tottenham", "nation": "ENGLAND", "possibleCombinations":[]},
-      {"name": "AEK Ateny", "nation": "GREECE", "possibleCombinations":[]}
+      {"name": "AEK Ateny", "nation": "GREECE", "possibleCombinations":[]},
       {"name": "Benfica Lizbona", "nation": "PORTUGAL", "possibleCombinations":[]}
     ]
   },

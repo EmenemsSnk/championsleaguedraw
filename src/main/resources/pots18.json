@@ -1,0 +1,28 @@
+[
+  {
+    "number": "1",
+    "teams": [
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Borussia Dortmund", "nation": "GERMANY", "possibleCombinations":[]}
+    ]
+  },
+  {
+    "number": "2",
+    "teams": [
+      {"name": "Real Madryt", "nation": "SPAIN", "possibleCombinations":[]},
+      {"name": "Crvena Zvezda", "nation": "SERBIA", "possibleCombinations":[]},
+      {"name": "Club Brugge", "nation": "BELGIUM", "possibleCombinations":[]},
+      {"name": "Galatasaray", "nation": "TURKEY", "possibleCombinations":[]},
+      {"name": "Atletico Madryt", "nation": "RUSSIA", "possibleCombinations":[]},
+      {"name": "Paris Saint-Germain", "nation": "FRANCE", "possibleCombinations":[]},
+      {"name": "Manchester City", "nation": "ENGLAND", "possibleCombinations":[]},
+      {"name": "Lokomotiw Moskwa", "nation": "RUSSIA", "possibleCombinations":[]}
+    ]
+  }
+]

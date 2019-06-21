@@ -14,6 +14,7 @@ public class GroupDrawPossibilities extends DrawPossibilities {
         super(pot, drawResult);
     }
 
+    @Override
     public void calculateAllPossibilities() {
         List<Team> teams = pot.getTeams();
         for (Team team: teams) {

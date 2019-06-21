@@ -11,11 +11,18 @@ import java.util.List;
 public class DrawMechanism {
     private final DrawResult drawResult;
     private final List<Pot> pots;
+    private DrawResult groupStageResult;
     private DrawPossibilities drawPossibilities;
 
     public DrawMechanism(List<Pot> pots, DrawResult drawResult) {
         this.pots = pots;
         this.drawResult = drawResult;
+    }
+
+    public DrawMechanism(List<Pot> pots, DrawResult drawResult, DrawResult groupStageResult) {
+        this.pots = pots;
+        this.drawResult = drawResult;
+        this.groupStageResult = groupStageResult;
     }
 
     public void draw() {
@@ -28,10 +35,27 @@ public class DrawMechanism {
                 drawPossibilities.validatePossibilities4Team(chosenTeam);
 
                 Group chosenGroup = drawGroup4Team(chosenTeam);
-                drawResult.addTeam2Group(chosenTeam, chosenGroup.getNumber() - 1);
+                drawResult.addTeam2Group(chosenTeam, chosenGroup);
             }
         });
     }
+/*
+
+    public void draw8() {
+        pots.forEach(pot -> {
+            drawPossibilities = new OneEightDrawPossibilities(pot, drawResult, groupStageResult);
+            drawPossibilities.calculateAllPossibilities();
+
+            while (!pot.isEmpty()) {
+                Team chosenTeam = drawTeam(pot);
+                drawPossibilities.validatePossibilities4Team(chosenTeam);
+
+                Group chosenGroup = drawGroup4Team(chosenTeam);
+                drawResult.addTeam2Group(chosenTeam, chosenGroup);
+            }
+        });
+    }
+*/
 
     private Team drawTeam(Pot pot) {
         int chosenTeamIndex = getRandomIndex(pot.getCurrentSize());
